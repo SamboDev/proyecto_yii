@@ -39,9 +39,15 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Actor', 'url' => ['/actor/index']],
+            ['label' => 'Actor Pelicula', 'url' => ['actor-pelicula/index']],
+            ['label' => 'Alquiler', 'url' => ['/alquiler/index']],
+            ['label' => 'Director', 'url' => ['/director/index']],
+            ['label' => 'Formato', 'url' => ['/formato/index']],
+            ['label' => 'Pelicula', 'url' => ['/pelicula/index']],
+            ['label' => 'Género', 'url' => ['/genero/index']],
+            ['label' => 'Sexo', 'url' => ['/sexo/index']],
+            ['label' => 'Socio', 'url' => ['/socio/index']],
             Yii::$app->user->isGuest
                 ? ['label' => 'Login', 'url' => ['/site/login']]
                 : '<li class="nav-item">'

@@ -30,8 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'ALQ_ID',
-            'SOC_ID',
-            'PEL_ID',
+            ['label' => 'Socio',
+            'value' => 'sOC.SOC_NOMBRE',],
+            ['label' => 'Pelicula',
+            'value' => 'pEL.PEL_NOMBRE',],
             'ALQ_FECHA_DESDE',
             'ALQ_FECHA_HASTA',
             //'ALQ_VALOR',
