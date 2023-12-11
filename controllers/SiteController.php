@@ -9,6 +9,8 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Pelicula;
+use app\models\Socio;
 
 class SiteController extends Controller
 {
@@ -61,7 +63,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $listaPelicula=Pelicula::find()->all();
+        $listaSocio=Socio::find()->all();
+        return $this->render('index',
+            ['listaPelicula'=>$listaPelicula],
+            ['listaSocio'=>$listaSocio]);
     }
 
     /**

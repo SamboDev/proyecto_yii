@@ -6,46 +6,53 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Congratulations!</h1>
+    <div class="jumbotron text-left bg- mt-5 mb-5 alert alert-secondary">
+        <div class="row">
+            <div class="col-lg-4">
+            <h1 class="display-4">Renta Tu Pelicula Favorita!</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Harum quaerat illum hic, placeat nisi obcaecati dolore 
+                consequuntur tenetur. Neque et amet, cumque distinctio placeat 
+                a temporibus quibusdam quam totam libero.</p>
+            </div>
+            <div class="col-lg-4">
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
+            </div>
+        </div>
     </div>
 
     <div class="body-content">
-
         <div class="row">
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+            <div class="col-lg-4 mb-3 alert alert-secondary">
+                <h1>Renta Ahora</h1>
             </div>
             <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <input type="text" class="d-inline">
+                <button class="d-inline">Search</button>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <h2>Peliculas Mas Populares</h2>
+                <?php
+                    foreach ($listaPelicula as $item) {
+                        echo "<ul>".$item->PEL_NOMBRE."</ul>";
+                    }
+                ?>
+            </div>
+            <div class="col-lg-4 mb-3">
+                
+            </div>
+            <div class="col-lg-4">
+                <h2>Socios Mas Activos!</h2>
+                <?php
+                    foreach ($listaPelicula as $item) {
+                        echo "<ul>".$item->PEL_NOMBRE."</ul>";
+                    }
+                ?>
             </div>
         </div>
 
