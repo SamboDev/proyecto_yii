@@ -10,7 +10,7 @@ $this->title = 'Renta Tu Pelicula!';
 
 <div class="jumbotron alert alert-secondary mt-5 mb-5 p-3">
     <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-6">
             <h1 class="display-4">Renta Tu Película Favorita!</h1>
             <p class="lead">Quieres ver una pelicula pero ya no esta en el cine? Tranquil@!.
                 Aqui esta tu solucion, RENTA TU PELI FAVORITA a precio de gallina muerta.
@@ -18,10 +18,7 @@ $this->title = 'Renta Tu Pelicula!';
                 No esperes mas!!!
             </p>
         </div>
-        <div class="col-lg-3">
-
-        </div>
-        <div class="col-lg-4 ml-3">
+        <div class="col-lg-5 ms-5 mt-2">
             <?= Html::img('@web/img/img_info.jpg', ['alt' => 'Descripción de la imagen', 'class' => 'img-fluid rounded']) ?>
         </div>
     </div>
