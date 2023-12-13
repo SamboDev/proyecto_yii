@@ -63,13 +63,15 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $listaPelicula=Pelicula::find()->all();
-        $listaSocio=Socio::find()->all();
-        return $this->render('index',
-            ['listaPelicula'=>$listaPelicula],
-            ['listaSocio'=>$listaSocio]);
+        $listaPelicula = Pelicula::find()->all();
+        $listaSocio = Socio::find()->all();
+        
+        return $this->render('index', [
+            'listaPelicula' => $listaPelicula,
+            'listaSocio' => $listaSocio,
+        ]);
     }
-
+    
     /**
      * Login action.
      *
